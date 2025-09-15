@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://cweapkuk3la1y"]
+[gd_scene load_steps=2 format=3 uid="uid://cweapkuk3la1y"]
+
+[ext_resource type="Script" uid="uid://onq2w7jak4sd" path="res://EZShirt/scenes/main_menu.gd" id="1_8hh63"]
 
 [node name="MainMenu" type="Node2D"]
+script = ExtResource("1_8hh63")
 
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
 
@@ -19,3 +22,5 @@ offset_right = 619.0
 offset_bottom = 414.0
 theme_override_font_sizes/font_size = 40
 text = "Create Shirt"
+
+[connection signal="pressed" from="CanvasGroup/Button" to="." method="_on_button_pressed"]
