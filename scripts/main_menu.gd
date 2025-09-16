@@ -4,10 +4,10 @@ extends Control
 @onready var option = $Option
 
 func _process(delta: float) -> void:
-	if !$AudioStreamPlayer2D.playing:
-		$AudioStreamPlayer2D.play()
+	pass
 
 func _ready():
+	BackgroundPlayer.play_background_music()
 	main_menu_buttons.visible = true
 	option.visible = false
 

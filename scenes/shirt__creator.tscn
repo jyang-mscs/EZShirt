@@ -1,10 +1,57 @@
-[gd_scene load_steps=3 format=3 uid="uid://t8402r88oaeo"]
+[gd_scene load_steps=15 format=3 uid="uid://t8402r88oaeo"]
 
+[ext_resource type="Script" uid="uid://pow87dh1pitw" path="res://EZShirt/scripts/shirt__creator.gd" id="1_cl1us"]
 [ext_resource type="Texture2D" uid="uid://cnvnyfptm5i56" path="res://EZShirt/assets/moon_background.png" id="1_ewsns"]
+[ext_resource type="FontFile" uid="uid://cd1ktivia8wwb" path="res://EZShirt/assets/Super Trend.ttf" id="2_dd27a"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dd27a"]
 texture = ExtResource("1_ewsns")
 modulate_color = Color(1, 1, 1, 0.509804)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cl1us"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wcs8g"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bbhik"]
+bg_color = Color(0.759766, 0.759766, 0.759766, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4r3wh"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cl1us"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wcs8g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bbhik"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4r3wh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lxmfl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bah84"]
+bg_color = Color(0.776471, 0.65098, 0.717647, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="ShirtCreator" type="Control"]
 layout_mode = 3
@@ -13,8 +60,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_cl1us")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="BackgroundIamge" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -22,3 +70,329 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_dd27a")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -475.0
+offset_right = 350.0
+offset_bottom = -377.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 80
+text = "Create Your Shirt"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Size" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -363.0
+offset_top = -269.0
+offset_right = -13.0
+offset_bottom = -196.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 60
+text = "Size"
+vertical_alignment = 1
+
+[node name="OptionSize" type="OptionButton" parent="Size"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 18.0
+offset_top = -23.5
+offset_right = 254.0
+offset_bottom = 40.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_hover_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_disabled_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_hover_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_focus_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_normal_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_outline_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_focus_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cl1us")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_wcs8g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bbhik")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4r3wh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_cl1us")
+icon_alignment = 1
+selected = 0
+allow_reselect = true
+item_count = 5
+popup/item_0/text = "Baby"
+popup/item_0/id = 0
+popup/item_1/text = "Young Teen"
+popup/item_1/id = 1
+popup/item_2/text = "Small"
+popup/item_2/id = 2
+popup/item_3/text = "Medium"
+popup/item_3/id = 3
+popup/item_4/text = "Large"
+popup/item_4/id = 4
+
+[node name="Brand" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -363.0
+offset_top = -144.0
+offset_right = -13.0
+offset_bottom = -63.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 60
+text = "Brand"
+vertical_alignment = 1
+
+[node name="OptionBrand" type="OptionButton" parent="Brand"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 18.0
+offset_top = -24.5
+offset_right = 181.0
+offset_bottom = 39.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_hover_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_disabled_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_hover_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_focus_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_normal_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_outline_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_focus_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cl1us")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_wcs8g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bbhik")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4r3wh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_cl1us")
+icon_alignment = 1
+selected = 0
+allow_reselect = true
+item_count = 5
+popup/item_0/text = "Gildan"
+popup/item_0/id = 0
+popup/item_1/text = "Hanes"
+popup/item_1/id = 1
+popup/item_2/text = "Uniqlo"
+popup/item_2/id = 2
+popup/item_3/text = "Nike"
+popup/item_3/id = 3
+popup/item_4/text = "Addidas"
+popup/item_4/id = 4
+
+[node name="Color" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -363.0
+offset_top = -24.0
+offset_right = -13.0
+offset_bottom = 74.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 60
+text = "Color"
+vertical_alignment = 1
+
+[node name="OptionColor" type="OptionButton" parent="Color"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 18.0
+offset_top = -25.0
+offset_right = 150.0
+offset_bottom = 39.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_hover_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_disabled_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_hover_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_focus_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_normal_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_outline_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_focus_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cl1us")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_wcs8g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bbhik")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4r3wh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_cl1us")
+icon_alignment = 1
+selected = 0
+allow_reselect = true
+item_count = 8
+popup/item_0/text = "Black"
+popup/item_0/id = 0
+popup/item_1/text = "White"
+popup/item_1/id = 1
+popup/item_2/text = "Red"
+popup/item_2/id = 2
+popup/item_3/text = "Blue"
+popup/item_3/id = 3
+popup/item_4/text = "Green"
+popup/item_4/id = 4
+popup/item_5/text = "Tan"
+popup/item_5/id = 5
+popup/item_6/text = "Gray"
+popup/item_6/id = 6
+popup/item_7/text = "Pink"
+popup/item_7/id = 7
+
+[node name="Graphic" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -363.0
+offset_top = 104.0
+offset_right = -13.0
+offset_bottom = 202.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 60
+text = "Graphic"
+vertical_alignment = 1
+
+[node name="OptionGraphic" type="OptionButton" parent="Graphic"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 18.0
+offset_top = -25.0
+offset_right = 418.0
+offset_bottom = 39.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_hover_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_disabled_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_hover_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_focus_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/icon_normal_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_outline_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_focus_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_colors/font_pressed_color = Color(0.811765, 0.592157, 0.784314, 1)
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cl1us")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_wcs8g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bbhik")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4r3wh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_cl1us")
+icon_alignment = 1
+selected = 0
+allow_reselect = true
+item_count = 5
+popup/item_0/text = "Ghost"
+popup/item_0/id = 0
+popup/item_1/text = "Pumkpin"
+popup/item_1/id = 1
+popup/item_2/text = "Harvest Fall"
+popup/item_2/id = 2
+popup/item_3/text = "Labubu"
+popup/item_3/id = 3
+popup/item_4/text = "Kpop Demon Hunter"
+popup/item_4/id = 4
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 208.0
+offset_bottom = 128.0
+theme_override_colors/icon_hover_pressed_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_colors/icon_hover_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_colors/icon_pressed_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wcs8g")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_bbhik")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_4r3wh")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_lxmfl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bah84")
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

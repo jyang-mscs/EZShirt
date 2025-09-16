@@ -1,9 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://dm00joy0keigj"]
+[gd_scene load_steps=16 format=3 uid="uid://dm00joy0keigj"]
 
 [ext_resource type="Script" uid="uid://dyx8rpsehvxrh" path="res://EZShirt/scripts/main_menu.gd" id="1_a6lap"]
 [ext_resource type="Texture2D" uid="uid://cnvnyfptm5i56" path="res://EZShirt/assets/moon_background.png" id="2_4s34d"]
 [ext_resource type="FontFile" uid="uid://cd1ktivia8wwb" path="res://EZShirt/assets/Super Trend.ttf" id="3_qxino"]
-[ext_resource type="AudioStream" uid="uid://c605pl7k54ojv" path="res://EZShirt/assets/background_music.mp3" id="4_oaxhx"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7vrkn"]
 texture = ExtResource("2_4s34d")
@@ -66,7 +65,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_a6lap")
 
-[node name="Background_Image" type="Panel" parent="."]
+[node name="BackgroundImage" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -171,11 +170,6 @@ theme_override_font_sizes/font_size = 80
 text = "Creativehlee Made"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_oaxhx")
-volume_db = -8.0
-autoplay = true
 
 [node name="Option" type="Panel" parent="."]
 layout_mode = 1
