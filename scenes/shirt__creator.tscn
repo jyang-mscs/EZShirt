@@ -395,4 +395,25 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_lxmfl")
 theme_override_styles/normal = SubResource("StyleBoxFlat_bah84")
 text = "Back"
 
+[node name="Order" type="Button" parent="."]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 800.0
+offset_right = 792.0
+offset_bottom = 910.0
+theme_override_colors/icon_hover_pressed_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_colors/icon_hover_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_colors/icon_pressed_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_fonts/font = ExtResource("2_dd27a")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wcs8g")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_bbhik")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_4r3wh")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_lxmfl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bah84")
+text = "Order"
+
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Order" to="." method="_on_order_pressed"]

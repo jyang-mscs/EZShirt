@@ -5,3 +5,7 @@ func _ready():
 
 func _on_back_pressed():
 	get_tree().change_scene_to_file("res://EZShirt/scenes/main_menu.tscn")
+
+
+func _on_order_pressed():
+	pass # Replace with function body.

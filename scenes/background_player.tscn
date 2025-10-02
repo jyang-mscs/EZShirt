@@ -5,7 +5,7 @@
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource("1_taujy")
-volume_db = -8.0
+volume_db = -10.0
 autoplay = true
 playback_type = 1
 parameters/looping = true
