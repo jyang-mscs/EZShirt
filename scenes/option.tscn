@@ -1,0 +1,89 @@
+[gd_scene load_steps=9 format=3 uid="uid://cicws5isjvo1t"]
+
+[ext_resource type="StyleBox" uid="uid://ic10i2eewikm" path="res://EZShirt/assets/buttons.tres" id="1_3jvwc"]
+[ext_resource type="FontFile" uid="uid://cd1ktivia8wwb" path="res://EZShirt/assets/Super Trend.ttf" id="2_ksda5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4s34d"]
+bg_color = Color(0.994141, 0.994141, 0.994141, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qxino"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a6lap"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4s34d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oaxhx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qgybv"]
+
+[node name="Option" type="Panel"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -374.0
+offset_top = -52.0
+offset_right = 374.0
+offset_bottom = 442.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("1_3jvwc")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_ksda5")
+theme_override_font_sizes/font_size = 80
+text = "Options"
+
+[node name="OptionX" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -76.0
+offset_top = 29.0
+offset_right = -36.0
+offset_bottom = 69.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4s34d")
+
+[node name="OptionX" type="Button" parent="OptionX"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_pressed_color = Color(0.265625, 0.265625, 0.265625, 1)
+theme_override_colors/font_hover_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_colors/font_outline_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_colors/font_color = Color(0.776471, 0.65098, 0.717647, 1)
+theme_override_colors/font_focus_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_colors/font_pressed_color = Color(0.266667, 0.266667, 0.266667, 1)
+theme_override_fonts/font = ExtResource("2_ksda5")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qxino")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_a6lap")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4s34d")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_oaxhx")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qgybv")
+text = "X"
